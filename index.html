@@ -12,21 +12,37 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container">
-                <ul class="navbar-nav mr-auto">
-                    <li><a href="#" class="nav-link">Better</a></li>
-                    <li><a href="#" class="nav-link">Descubra</a></li>
-                    <li><a href="#" class="nav-link">Preços</a></li>
-                    <li><a href="#" class="nav-link">Cadastre-se</a></li>
-                    <li><a href="#" class="nav-link">Login</a></li>
-                </ul>
+                <a href="#" class="navbar-brand">Better</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="dropdown"> 
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Descubra</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">Paisagem</a></li>
+                                <li><a href="#" class="dropdown-item">Tecnologia</a></li>
+                                <li><a href="#" class="dropdown-item">Abstrato</a></li>
+                                <li><a href="#" class="dropdown-item">Animais</a></li>
+                                <li><a href="#" class="dropdown-item">Comida</a></li>
+                                <li><a href="#" class="dropdown-item">Pessoas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-link">Preços</a></li>
+                        <li><a href="#" class="nav-link">Cadastre-se</a></li>
+                        <li><a href="#" class="nav-link">Login</a></li>
+                    </ul>
+                </div>
+                <!--Fim do .collapse-->
             </div>
-
         </nav>
     </header>
 
-
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
 
 </html>
